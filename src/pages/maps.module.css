@@ -1,0 +1,174 @@
+.pokedexWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f1f1f1;
+    width: 100%;
+  }
+  
+  .pokedexContainer {
+    position: relative;
+    width: 70vw;
+    height: 60vh;
+    max-width: 600px;
+    max-height: 800px;
+    background: #e6e6e6;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .pokedexScreen {
+    position: relative;
+    width: 100%;
+    height: 85%;
+    background: #1d1d1b;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+  }
+  
+  .mapContainer {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .pokedexButton {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f1c40f;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .pokedexButton img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .pokeballButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .pokeballImg {
+    width: 30px;
+    height: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .pokedexContainer {
+      width: 80vw;
+      height: 70vh;
+    }
+  
+    .pokedexButton {
+      padding: 8px;
+    }
+  
+    .pokedexButton img {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .pokeballButton {
+      padding: 8px;
+    }
+  
+    .pokeballImg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .pokedexContainer {
+      width: 90vw;
+      height: 60vh;
+    }
+  
+    .pokedexButton {
+      padding: 6px;
+    }
+  
+    .pokedexButton img {
+      width: 25px;
+      height: 25px;
+    }
+  
+    .pokeballButton {
+      padding: 6px;
+    }
+  
+    .pokeballImg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .pokedexContainer {
+      width: 50vw;
+      height: 60vh;
+    }
+  
+    .pokedexButton {
+      padding: 12px;
+    }
+  
+    .pokedexButton img {
+      width: 45px;
+      height: 45px;
+    }
+  
+    .pokeballButton {
+      padding: 12px;
+    }
+  
+    .pokeballImg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+  @media (min-width: 1600px) {
+    .pokedexContainer {
+      width: 40vw;
+      height: 50vh;
+      max-width: 800px;
+      max-height: 1000px;
+    }
+  
+    .pokedexButton {
+      padding: 15px;
+    }
+  
+    .pokedexButton img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .pokeballButton {
+      padding: 15px;
+    }
+  
+    .pokeballImg {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  

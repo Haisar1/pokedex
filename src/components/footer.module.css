@@ -1,0 +1,33 @@
+.footer {
+  padding: 10px;
+  background: var(--bg-gradient);
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.footerLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #292929;
+  margin: 10px 0;
+  font-size: 12px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.footerLink:hover {
+  transform: translateY(-3px);
+}
+
+.footerIcon {
+  width: 35px;
+  margin: 5px 0;
+}
