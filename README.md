@@ -1,5 +1,8 @@
 # Pokédex
 
+Click para ver la demo de la pokedex
+[![Pokédex Icon](https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png)](https://pokedexhaisar.netlify.app/) 
+
 Una aplicación web para consultar información sobre los Pokémon. Esta Pokédex permite a los usuarios ver detalles de cada Pokémon, como su nombre, ID, imagen, estadísticas de vida, ataque y defensa.
 
 ## Características
