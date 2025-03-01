@@ -20,6 +20,10 @@ export async function fetchPokemon(
     hp: result.stats[0]?.base_stat,
     attack: result.stats[1]?.base_stat,
     defense: result.stats[2]?.base_stat,
+    species: result.species.name,
+    abilities: result.abilities.map((a: any) => a.ability.name),
+    types: result.types.map((a: any) => a.type.name),
+
   };
   return pokemon;
 }

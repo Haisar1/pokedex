@@ -1,49 +1,66 @@
-.nav {
-  margin-bottom: 100px;
-}
-
-.listItem {
+.headerWrapper { 
   display: flex;
-  border-bottom: 3px solid #e4e4e4;
-  padding: 10px;
-  text-decoration: none;
+  flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 }
 
-.listItem > :first-child {
-  margin-right: 15px;
+.pokeballIcon {
+  margin-top: 20px;
+  width: auto;
+  height: auto;
+  margin-bottom: 10px;
 }
 
-.listItem > :last-child {
-  margin: 0;
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px;
+  min-height: calc(100vh - 200px); 
 }
 
-.listItemIcon {
-  width: 2rem;
-  height: 2rem;
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  background: #f8f8f8;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  width: 150px; /* Fija el tamaño de la tarjeta */
+  height: 180px; /* Asegura que todas las tarjetas tengan la misma altura */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.cardImage {
+  width: 100px;
+  height: 100px;
   object-fit: contain;
 }
 
-.listItemText {
-  flex-grow: 2;
-}
-
-.listItemText > :first-child {
-  background: -webkit-linear-gradient(
-    rgb(184, 140, 204) 25%,
-    rgb(212, 121, 240) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 1rem;
-  display: block;
-  margin-bottom: 11px;
+.cardText {
+  text-align: center;
   font-weight: bold;
+  color: #333;
 }
 
-.listItemText > :last-child {
-  color: grey;
-  font-weight: bolder;
-  font-size: 0.8rem;
-  display: block;
+.loadMoreTrigger {
+  height: 20px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 80px; 
+}
+
+main {
+  flex-grow: 1;
 }
